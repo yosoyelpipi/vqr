@@ -35,14 +35,14 @@ function checkConnection() {
             var networkState = navigator.connection.type;
 
             var states = {};
-            states[Connection.UNKNOWN]  = 'Unknown connection';
-            states[Connection.ETHERNET] = 'Ethernet connection';
-            states[Connection.WIFI]     = 'WiFi connection';
-            states[Connection.CELL_2G]  = 'Cell 2G connection';
-            states[Connection.CELL_3G]  = 'Cell 3G connection';
-            states[Connection.CELL_4G]  = 'Cell 4G connection';
-            states[Connection.CELL]     = 'Cell generic connection';
-            states[Connection.NONE]     = 'No network connection';
+            states[Connection.UNKNOWN]  = 'No podemos determinar tu tipo de conexión a una red de datos.';
+            states[Connection.ETHERNET] = 'Estás conectado a la red mediante Ethernet connection, vas a ir muy rápido.';
+            states[Connection.WIFI]     = 'Estás conectado a la red mediante WiFi connection, vas a ir muy rápido.';
+            states[Connection.CELL_2G]  = 'Estás conectado a la red mediante Cell 2G connection, vas a ir muy rápido.';
+            states[Connection.CELL_3G]  = 'Estás conectado a la red mediante Cell 3G connection, vas a ir muy rápido.';
+            states[Connection.CELL_4G]  = 'Estás conectado a la red mediante Cell 4G connection, vas a ir muy rápido.';
+            states[Connection.CELL]     = 'Estás conectado a la red mediante Cell generic connection, podrías experimentar lentitud en la aplicación.';
+            states[Connection.NONE]     = '¡Atención! No estás conectado a ninguna red, no podrás cargar la libreta sanitaria. Activa tu conexión WiFi o vuelve en otro momento.';
 
-            alert('Estas conectado mediante: ' + states[networkState]);
+            alert(states[networkState]);
         }
