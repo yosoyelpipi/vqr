@@ -7,18 +7,15 @@
 <name>MascotasVQR</name>
 
 <description>
-Con esta aplicación vas a poder actualizar la libreta sanitaria de tu mascota en todo momento, en cualquier lugar. MascotasVQR es innovación constante.
+Con esta aplicación tanto vos como tu veterinario van a poder actualizar la libreta sanitaria de tu mascota en todo momento, en cualquier lugar. MascotasVQR es innovación constante.
 </description>
 
 
 <preference name="phonegap-version" value="3.6.3" />
 
 <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
 <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
 
-
-<preference name="orientation" value="portrait" />
 <preference name="fullscreen" value="true" />
 <icon src="img/icon_gde.png" />
 <gap:splash src="img/splash.png" />
@@ -27,8 +24,9 @@ Con esta aplicación vas a poder actualizar la libreta sanitaria de tu mascota e
 <preference name="android-minSdkVersion" value="5" />
 <preference name="android-targetSdkVersion" value="19" />
 <preference name="android-maxSdkVersion" value="19" />
+<preference name="permissions" value="none" />
 
-<author href="http://www.mascotasvqr.com" email="lcondori@gmail.com">
+<author href="http://www.mascotasvqr.com" email="contacto@mascotasvqr.com">
 @leocondori
 </author>
 
