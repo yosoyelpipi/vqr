@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.mascotasvqrlibsanitaria.app"
-    version   = "1.0.1">
+    version   = "1.0.2">
 
 <name>MascotasVQR</name>
 
@@ -15,6 +15,7 @@ Con esta aplicación tanto vos como tu veterinario van a poder actualizar la lib
 
 <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
 <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
 
 <preference name="fullscreen" value="true" />
 <icon src="img/icon_gde.png" />
@@ -24,7 +25,6 @@ Con esta aplicación tanto vos como tu veterinario van a poder actualizar la lib
 <preference name="android-minSdkVersion" value="5" />
 <preference name="android-targetSdkVersion" value="19" />
 <preference name="android-maxSdkVersion" value="19" />
-<preference name="permissions" value="none" />
 
 <author href="http://www.mascotasvqr.com" email="contacto@mascotasvqr.com">
 @leocondori
