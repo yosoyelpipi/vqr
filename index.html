@@ -18,6 +18,10 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+	
+	<!-- Mi javascript phonegap -->
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/mipropiojava.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -86,7 +90,7 @@
   
   </head>
 
-  <body>
+  <body onload="onBodyLoad()">
 
     <div class="container">
 
@@ -144,7 +148,7 @@
 						</div>
 					  </div>
 			</form>
-		</div>		
+		</div>	
 
 	<hr class="desing-hr">
 				<div align="right">
@@ -157,6 +161,9 @@
 <br>
       <footer class="footer">
         <p>	&copy; MascotasVQR 2015</p>
+		<div id="resultado" align="center">
+			<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	        </div>
       </footer>
 
     </div> <!-- /container -->
